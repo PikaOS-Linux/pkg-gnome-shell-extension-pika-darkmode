@@ -6,8 +6,6 @@ add-apt-repository https://ppa.pika-os.com
 add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
-mkdir -p ./gnome-shell-extension-pika-darkmode
-cp -rvf ./* ./gnome-shell-extension-pika-darkmode || echo
 cd ./gnome-shell-extension-pika-darkmode
 
 # Get build deps

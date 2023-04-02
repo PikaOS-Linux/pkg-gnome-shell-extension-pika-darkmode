@@ -1,0 +1,16 @@
+Source: gnome-shell-extension-pika-darkmode
+Section: gnome
+Priority: optional
+Maintainer: Ward Nakchbandi <hotrod.master@hotmail.com>
+Build-Depends: debhelper (>= 10),
+               dh-translations,
+               libglib2.0-bin,
+Standards-Version: 4.1.1
+
+Package: gnome-shell-extension-pika-darkmode
+Architecture: all
+Depends: gnome-shell (<< 44),
+         gnome-shell (>= 40),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description:  Fixes Darkmode in GNOME
