@@ -5,10 +5,5 @@
 # #export DH_VERBOSE=1
 export DEB_BUILD_OPTIONS = nocheck
 
-override_dh_install:
-	dh_install
-	mkdir -p debian/gnome-shell-extension-pika-darkmode/usr/share/glib-2.0/schemas
-	cp -rfv src/data/org.gnome.shell.extensions.nightthemeswitcher.gschema.xml debian/gnome-shell-extension-pika-darkmode/usr/share/glib-2.0/schemas/
-
 %:
-	dh $@ --buildsystem=meson
+	dh $@
