@@ -2,7 +2,7 @@ DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
 mkdir -p ./gnome-shell-extension-pika-darkmode
-cp -rvf ./* ./gnome-shell-extension-pika-darkmode || echo
+cp -rvf ./debian ./gnome-shell-extension-pika-darkmode/
 cd ./gnome-shell-extension-pika-darkmode
 
 # Get build deps
